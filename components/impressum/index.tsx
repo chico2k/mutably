@@ -2,25 +2,41 @@ import React from 'react';
 
 const ImpressumComponent = () => {
   return (
-    <div className='bg-gray-600 h-screen w-full flex items-center justify-center relative'>
-      <p className='text-sm text-gray-400'>
-        <span className='font-bold text-xl text-gray-200'>mutably GmbH</span>
+    <div
+      className='
+    bg-gray-900 pt-10 max-w-7xl mx-auto py-12 px-4
+
+    sm:pt-16 sm:px-6 
+
+    lg:overflow-hidden lg:py-32 lg:px-8'
+    >
+      <p
+        className='text-sm text-gray-400
+      md:text-base
+      '
+      >
+        <span
+          className='font-bold text-lg text-gray-200
+        md:text-xl'
+        >
+          mutably GmbH
+        </span>
         <br />
         Anton-Bruckner-Weg 3 <br />
         83301 Traunreut <br />
-        Deutschland
+        Germany
         <br />
         <br />
         <b />
-        vertreten durch Mario Galla
+        represented by Mario Galla
         <br />
         <br />
         Handelsregister: HRB 30689 <br />
         Registergericht: Amtsgericht Traunstein
         <br />
         <br />
-        Email: galla@mutably.io <br />
-        Telefon: +49 170 9675488
+        Mail: galla@mutably.io <br />
+        Phone: +49 170 9675488
         <br />
       </p>
     </div>
