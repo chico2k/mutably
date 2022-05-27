@@ -1,4 +1,4 @@
-/* This example requires Tailwind CSS v2.0+ */
+import React from 'react';
 import {
   GlobeAltIcon,
   LightningBoltIcon,
@@ -74,15 +74,11 @@ const features = [
   },
 ];
 
-import React from 'react';
-
-// pt-48 -mt-12 md:-mt-36
-
 const ServicesComponent = () => {
   return (
     <section className='bg-gray-800 pb-36  pt-32 z -mt-32'>
       <div className='max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8'>
-        <h2 className=' text-left mb-12 text-4xl font-extrabold tracking-tight text-white sm:text-center md:text-5xl  lg:text-6xl'>
+        <h2 className=' text-left mb-16 text-4xl text-white sm:text-center md:text-5xl md:mb-24 lg:text-6xl'>
           Our offerings.
         </h2>
         <dl className='space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-16'>

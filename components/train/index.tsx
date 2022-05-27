@@ -1,34 +1,7 @@
 import React from 'react';
-import {
-  NewspaperIcon,
-  PhoneIcon,
-  SupportIcon,
-} from '@heroicons/react/outline';
-import ContactButton from '../ui/ContactButton';
 
-const incentives = [
-  {
-    name: 'Free shipping',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
-    description:
-      "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
-  },
-  {
-    name: '10-year warranty',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
-    description:
-      "If it breaks in the first 10 years we'll replace it. After that you're on your own though.",
-  },
-  {
-    name: 'Exchanges',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
-    description:
-      "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
-  },
-];
+import ContactButton from '../ui/ContactButton';
+import NextImage from 'next/image';
 
 const TrainComponent = () => {
   return (
@@ -45,15 +18,17 @@ const TrainComponent = () => {
               lot more money if we kinda stopped caring about that. Our new
               strategy is to write a bunch of things that look really good in
               the headlines, then clarify in the small print but hope people
-              don't actually read it.
+              don`t actually read it.
             </p>
             <div className='mt-8'>
               <ContactButton />
             </div>
           </div>
           <div className='col-span-2'>
-            <img
-              src='images/train.png'
+            <NextImage
+              width={3469}
+              height={1755}
+              src='/images/train.png'
               alt=''
               className='object-center h-full'
             />

@@ -6,11 +6,11 @@ import {
   CheckIcon,
   LocationMarkerIcon,
   AcademicCapIcon,
-  ChatIcon,
 } from '@heroicons/react/solid';
 import DetailDividerComponent from './Components/divider';
 import PreviousWorkExperienceComponent from './Components/prevExperience';
 import { UserIcon } from '@heroicons/react/outline';
+import NextImage from 'next/image';
 
 type IProps = {
   detailData: IDetailFields;
@@ -34,12 +34,13 @@ const DetailComponent: React.FC<IProps> = ({ detailData }) => {
             role='list'
             className='space-y-12 sm:divide-y sm:divide-gray-200 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0'
           >
-            <div className='space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0'>
+            <div className='relative  w-full md:w-4/5 aspect-square r space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0'>
               <div className=''>
-                <img
-                  className='object-cover shadow-lg rounded-lg aspect-square'
+                <NextImage
+                  layout='fill'
+                  className='object-cover shadow-lg rounded-lg'
                   src={detailData.imageUrl}
-                  alt=''
+                  alt={`${detailData.name}Profile Picture`}
                 />
               </div>
               <div className='sm:col-span-2'>
