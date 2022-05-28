@@ -19,8 +19,9 @@ async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
             }
 
         });
+
     } catch (error) {
-        return res.status(500)
+        return res.status(500).json({ error: "Mail Delivery failed" });
     }
 
     return res.status(200).json({ error: "" });

@@ -12,13 +12,21 @@ export const EMPLOYEE_DATA: IDetailData = {
     certificates: [
       'SAP SuccessFactors Learning',
       'SAP SuccessFactors Employee Central',
-      'SAP SuccessFactors Workforce Anayltics Functional Consultant',
+      'SAP SuccessFactors Workforce Analytics  Functional Consultant',
       'SAP SuccessFactors Functional Reporting',
     ],
     bio: 'More than nine years of consulting experience in different roles and markets. As digital native and tech lover fully commited to digialize the world.',
     previousWorkExperience: [
       {
         id: 1,
+        name: 'mutably GmbH',
+        location: 'Traunreut, Germany',
+        role: 'CEO',
+        from: '2022',
+        to: 'present',
+      },
+      {
+        id: 2,
         name: 'PriceWaterhouseCoopers GmbH',
         location: 'Munich, Germany',
         role: 'Senior Manager',
@@ -26,7 +34,7 @@ export const EMPLOYEE_DATA: IDetailData = {
         to: '2022',
       },
       {
-        id: 2,
+        id: 3,
         name: 'accenture GmbH',
         location: 'Munich, Germany',
         role: 'Associate Consultant',

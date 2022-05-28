@@ -29,7 +29,8 @@ const Navigation = () => {
                 <a>
                   <span className='sr-only'>Workflow</span>
                   <NextImage
-                    layout='fill'
+                    width={100}
+                    height={100}
                     className='h-8 w-auto sm:h-10'
                     src='/logo/1.png'
                     alt=''

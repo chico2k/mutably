@@ -15,7 +15,7 @@ export const references: IReferences[] = [
     projectScope: 'Global',
 
     tags: [
-      'Projecgt Management',
+      'Project Management',
       'DMS Integration',
       'Validated LMS',
       'Change Control',

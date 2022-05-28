@@ -6,6 +6,7 @@ import {
   CheckIcon,
   LocationMarkerIcon,
   AcademicCapIcon,
+  SpeakerphoneIcon,
 } from '@heroicons/react/solid';
 import DetailDividerComponent from './Components/divider';
 import PreviousWorkExperienceComponent from './Components/prevExperience';
@@ -34,10 +35,11 @@ const DetailComponent: React.FC<IProps> = ({ detailData }) => {
             role='list'
             className='space-y-12 sm:divide-y sm:divide-gray-200 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0'
           >
-            <div className='relative  w-full md:w-4/5 aspect-square r space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0'>
+            <div className='relative  w-full md:w-4/5 space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0'>
               <div className=''>
                 <NextImage
-                  layout='fill'
+                  height={200}
+                  width={200}
                   className='object-cover shadow-lg rounded-lg'
                   src={detailData.imageUrl}
                   alt={`${detailData.name}Profile Picture`}
@@ -92,18 +94,26 @@ const DetailComponent: React.FC<IProps> = ({ detailData }) => {
                         </div>
                       </li>
                       <li className=''>
-                        <div className='mt-2 flex pl-6'>
+                        <div className='mt-2 flex items-center'>
+                          <div className='flex-shrink-0'>
+                            <SpeakerphoneIcon
+                              className='h-6 w-6 lg:h-7 lg:w-7 text-gray-400'
+                              aria-hidden='true'
+                            />
+                          </div>
                           <div className='ml-3 text-gray-500'>
-                            <p>
-                              {detailData.languages.map((language, index) => (
-                                <span
-                                  key={index}
-                                  className='inline-block bg-indigo-500 rounded-full px-3 py-1 text-xs font-semibold text-indigo-200 mr-2 mb-2'
-                                >
-                                  {language}
-                                </span>
-                              ))}
-                            </p>
+                            <div className='mt-2 flex'>
+                              <p>
+                                {detailData.languages.map((language, index) => (
+                                  <span
+                                    key={index}
+                                    className='inline-block bg-indigo-500 rounded-full px-3 py-1 text-xs font-semibold text-indigo-200 mr-2 mb-2'
+                                  >
+                                    {language}
+                                  </span>
+                                ))}
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </li>
@@ -132,7 +142,7 @@ const DetailComponent: React.FC<IProps> = ({ detailData }) => {
       <DetailDividerComponent title={'CERTIFICATES'}>
         <div className='text-base text-gray-100 mt-4'>
           {detailData.certificates.map((certificate, index) => (
-            <div key={index} className='flex'>
+            <div key={index} className='flex mb-1'>
               <CheckIcon
                 className='absolute h-6 w-6 text-indigo-400'
                 aria-hidden='true'
@@ -143,7 +153,7 @@ const DetailComponent: React.FC<IProps> = ({ detailData }) => {
         </div>
       </DetailDividerComponent>
 
-      <DetailDividerComponent title={'Previous Work Experience'}>
+      <DetailDividerComponent title={'Work Experience'}>
         <PreviousWorkExperienceComponent
           previousWorkExperience={detailData.previousWorkExperience}
         />

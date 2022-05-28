@@ -12,36 +12,46 @@ const DevelopmentComponent = () => {
           <div className='col-span-1 flex justify-center md:col-span-2 lg:col-span-1'>
             <NextImage
               className='h-12'
-              src='images/devLogos/react.png'
+              src='/images/devLogos/react.png'
               alt='Tuple'
+              width={100}
+              height={100}
             />
           </div>
           <div className='col-span-1 flex justify-center md:col-span-2 lg:col-span-1'>
             <NextImage
               className='h-12 '
-              src='images/devLogos/next.png'
+              src='/images/devLogos/next.png'
               alt='Mirage'
+              width={100}
+              height={100}
             />
           </div>
           <div className='col-span-1 flex justify-center md:col-span-2 lg:col-span-1'>
             <NextImage
               className='h-12'
-              src='https://tailwindui.com/img/logos/statickit-logo-gray-400.svg'
+              src='/images/devLogos/next.png'
               alt='StaticKit'
+              width={100}
+              height={100}
             />
           </div>
           <div className='col-span-1 flex justify-center md:col-span-3 lg:col-span-1'>
             <NextImage
               className='h-12'
-              src='https://tailwindui.com/img/logos/transistor-logo-gray-400.svg'
+              src='/images/devLogos/next.png'
               alt='Transistor'
+              width={100}
+              height={100}
             />
           </div>
           <div className='col-span-2 flex justify-center md:col-span-3 lg:col-span-1'>
             <NextImage
               className='h-12'
-              src='https://tailwindui.com/img/logos/workcation-logo-gray-400.svg'
+              src='/images/devLogos/next.png'
               alt='Workcation'
+              width={100}
+              height={100}
             />
           </div>
         </div>
