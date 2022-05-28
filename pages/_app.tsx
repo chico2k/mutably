@@ -7,18 +7,18 @@ import { Router } from 'next/router';
 import Spinner from '../components/Layout/Spinner';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [isLoading, setLoading] = useState(true);
+  const [isLoading, setLoading] = useState(false);
 
-  // useEffect(() => {
-  //   Router.events.on('routeChangeStart', () => {
-  //     if (isLoading) return;
-  //     return setLoading(true);
-  //   });
-  //   Router.events.on('routeChangeComplete', () => setLoading(false));
-  //   Router.events.on('routeChangeError', () => {
-  //     return setLoading(false);
-  //   });
-  // }, []);
+  useEffect(() => {
+    Router.events.on('routeChangeStart', () => {
+      if (isLoading) return;
+      return setLoading(true);
+    });
+    Router.events.on('routeChangeComplete', () => setLoading(false));
+    Router.events.on('routeChangeError', () => {
+      return setLoading(false);
+    });
+  });
 
   // console.log('setLoading', isLoading);
 
