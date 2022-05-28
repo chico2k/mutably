@@ -1,74 +1,50 @@
 import React from 'react';
 import {
-  GlobeAltIcon,
-  LightningBoltIcon,
-  ScaleIcon,
-} from '@heroicons/react/outline';
-import {
-  NewspaperIcon,
-  PhoneIcon,
-  SupportIcon,
+  UserGroupIcon,
+  AcademicCapIcon,
+  CloudUploadIcon,
 } from '@heroicons/react/outline';
 
-const supportLinks = [
-  {
-    name: 'Sales',
-    href: '#',
-    description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
-    icon: PhoneIcon,
-  },
-  {
-    name: 'Technical Support',
-    href: '#',
-    description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
-    icon: SupportIcon,
-  },
-  {
-    name: 'Media Inquiries',
-    href: '#',
-    description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
-    icon: NewspaperIcon,
-  },
-];
 const features = [
   {
     name: 'Advise',
     description:
-      'Professional steering and execution of holistic digitalization projects. National to global, public to pharma - we got you covered',
-    icon: GlobeAltIcon,
+      'Professional steering and advise of holistic digitalization projects in Humman Resources. From National to global, from public to pharma.',
+    icon: UserGroupIcon,
     bullets: [
       'Holistic HR Transformation',
+      'Implementation Planning',
       'SAP SuccessFactors',
-      'Validated Learning Management Systems',
+      'Validated LMS',
       'Reporting & Analytics',
-      'Technical integration',
+      'Technical Infrastructure',
     ],
   },
   {
     name: 'Develop',
     description:
-      'Effient and web development with state of the art tools like React, Next.JS and Serverless.',
-    icon: ScaleIcon,
+      'Infrastructure & Integration design as well as efficient and fast development with state of the art tools like React, Next.JS and Serverless.',
+    icon: CloudUploadIcon,
     bullets: [
+      'Integration',
       'React',
-      'Next.JS',
+      'Next.js',
       'Serverless',
       'Database & Storage',
-      'Integraton',
+      'Infastructure as a Service',
     ],
   },
   {
     name: 'Train',
     description:
-      'We are offering a broad variety of trainings such as as SAP SuccessFactors, Project Management, Web Development and much more.',
-    icon: LightningBoltIcon,
+      'Broad variety of trainings such as as SAP SuccessFactors, Project Management, Web Development. Professional remote or on-site execution of trainings.',
+    icon: AcademicCapIcon,
     bullets: [
       'SAP SuccessFactors',
       'Project Management',
-      'Reporting & Anayltics',
+      'Reporting & Analytics',
+      'Development',
+      'Design Fundamentals',
       'Indivdual Coaching',
     ],
   },
@@ -81,30 +57,58 @@ const ServicesComponent = () => {
         <h2 className=' text-left mb-16 text-4xl text-white sm:text-center md:text-5xl md:mb-24 lg:text-6xl'>
           Our offerings.
         </h2>
-        <dl className='space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-16'>
+
+        <dl className='space-y-8 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-10'>
           {features.map((feature) => (
             <div
               key={feature.name}
               className='flex flex-col bg-gray-900  shadow-gray-700/40  rounded-2xl shadow-xl py-8  '
             >
-              <div className='flex-1 relative  px-6 pb-8 md:px-8'>
-                <h3 className='text-3xl text-indigo-400 font-medium uppercase tracking-wider '>
-                  {feature.name}
-                </h3>
-                <p className='mt-4 text-base text-gray-200'>
-                  {feature.description}
-                </p>
-                <ul className='mt-4 ml-4 '>
-                  {feature.bullets.map((bullet) => {
-                    return (
-                      <div key={bullet} className=''>
-                        <li className='text-gray-200 text-sm list-disc'>
-                          {bullet}
-                        </li>
+              <div className='flex-1 relative px-6 md:px-10'>
+                <div className='lg:grid lg:grid-rows-2 h-full pt-2'>
+                  <div>
+                    <h3 className='text-3xl text-indigo-400 font-medium uppercase tracking-wider '>
+                      {feature.name}
+                    </h3>
+                    {/* Divider */}
+                    <div className='relative'>
+                      <div
+                        className='absolute inset-0 flex items-center'
+                        aria-hidden='true'
+                      >
+                        <div className='w-full border-t border-gray-500' />
                       </div>
-                    );
-                  })}
-                </ul>
+                      <div className='relative flex justify-end'>
+                        <span className='bg-gray-900 pl-2 -mr-1 text-gray-500'>
+                          <feature.icon
+                            width={28}
+                            height={28}
+                            strokeWidth={1.3}
+                          />
+                        </span>
+                      </div>
+                    </div>
+
+                    <p className='mb-8 mt-4 text-sm text-gray-300  lg:mb-0 '>
+                      {feature.description}
+                    </p>
+                  </div>
+                  <div>
+                    {/* List */}
+
+                    <ul className='mt-5 ml-4 '>
+                      {feature.bullets.map((bullet) => {
+                        return (
+                          <div key={bullet} className=''>
+                            <li className='text-gray-300 text-sm list-disc mb-1'>
+                              {bullet}
+                            </li>
+                          </div>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           ))}

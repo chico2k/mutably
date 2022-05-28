@@ -12,7 +12,7 @@ const DevelopmentComponent = () => {
           mutably:
         </p>
       </div>
-      <div className='pt-4 pb-12'>
+      <div className='pt-12 pb-48'>
         <div className='grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5 items-center'>
           <a href='https://reactjs.org/' target={'_blank'} rel='noreferrer'>
             <div className='col-span-1 flex justify-center md:col-span-2 lg:col-span-1 w-32 '>

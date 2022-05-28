@@ -31,6 +31,7 @@ const TrainComponent = () => {
               src='/images/train.png'
               alt=''
               className='object-center h-full'
+              priority
             />
           </div>
         </div>
