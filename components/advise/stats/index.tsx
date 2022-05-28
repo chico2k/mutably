@@ -1,16 +1,19 @@
 import React from 'react';
+import NextLink from 'next/link';
 
 const AdviseStatsComponent = () => {
   return (
     <div className='max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20'>
       <div className='max-w-4xl mx-auto text-center'>
-        <h2 className='text-3xl font-extrabold text-white sm:text-4xl'>
+        <h2 className='text-2xl font-bold text-gray-200 sm:text-4xl'>
           Experience from more than 30 digialization transformation projects.
         </h2>
-        <div className='flex flex-col mt-6 text-indigo-400'>
-          <div className='order-2 mt-2 text-lg leading-6 font-medium text-indigo-200'>
-            See all our referenes
-          </div>
+        <div className='mt-12 text-indigo-400'>
+          <NextLink href='/references'>
+            <a className=' px-8 text-center w-full py-3 rounded-md shadow bg-indigo-600 text-white font-medium hover:bg-indigo-700'>
+              Our References
+            </a>
+          </NextLink>
         </div>
       </div>
     </div>

@@ -36,7 +36,7 @@ const DetailComponent: React.FC<IProps> = ({ detailData }) => {
             <NextImage
               height={300}
               width={300}
-              className='object-cover shadow-lg rounded-lg'
+              className='object-cover shadow-lg rounded-lg grayscale'
               src={detailData.imageUrl}
               alt={`${detailData.name}Profile Picture`}
             />

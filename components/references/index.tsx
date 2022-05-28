@@ -6,9 +6,7 @@ const ReferencesComponent = () => {
   return (
     <div className='max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 '>
       <div className='mx-auto'>
-        <h2 className='text-4xl font-extrabold text-gray-100 mb-28'>
-          Our referenes from the past
-        </h2>
+        <h2 className='sr-only'>Referenes from mutably</h2>
         <ReferenceList references={references} />
         <div className='text-sm text-gray-500 mt-36 max-w-4xl'>
           <span>

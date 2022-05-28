@@ -5,6 +5,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import NextLink from 'next/link';
 import ContactButton from '../ui/ContactButton';
 import NextImage from 'next/image';
+import { useRouter } from 'next/router';
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -16,6 +17,10 @@ const navigation = [
 ];
 
 const Navigation = () => {
+  const router = useRouter();
+
+  console.log('router', router);
+
   return (
     <Popover as='header' className='relative'>
       <div className='bg-gray-900 pt-6'>
@@ -45,13 +50,18 @@ const Navigation = () => {
               </div>
             </div>
             <div className='hidden space-x-7 md:flex md:ml-6 lg:space-x-10'>
-              {navigation.map((item) => (
-                <NextLink href={item.href} key={item.name}>
-                  <a className='text-base font-medium text-white hover:text-gray-300'>
-                    {item.name}
-                  </a>
-                </NextLink>
-              ))}
+              {navigation.map((item) => {
+                const active =
+                  router.pathname === item.href
+                    ? `text-base font-semibold text-indigo-400  border-b-2 border-indigo-400 `
+                    : `text-base font-medium text-white hover:text-gray-300 `;
+
+                return (
+                  <NextLink href={item.href} key={item.name}>
+                    <a className={active}>{item.name}</a>
+                  </NextLink>
+                );
+              })}
             </div>
           </div>
           <div className='hidden md:flex md:items-center md:space-x-6'>

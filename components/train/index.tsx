@@ -1,5 +1,5 @@
 import React from 'react';
-
+import NextLink from 'next/link';
 import ContactButton from '../ui/ContactButton';
 import NextImage from 'next/image';
 
@@ -14,13 +14,13 @@ const TrainComponent = () => {
               <span className=' text-indigo-400'> knowledge.</span>
             </h2>
             <p className='mt-4 text-gray-500'>
-              At the beginning at least, but then we realized we could make a
-              lot more money if we kinda stopped caring about that. Our new
-              strategy is to write a bunch of things that look really good in
-              the headlines, then clarify in the small print but hope people
-              don`t actually read it.
+              <div>
+                We offer a broad variety of trainings such as as SAP
+                SuccessFactors, Project Management, Web Development.
+                Professional remote or on-site execution of trainings.
+              </div>
             </p>
-            <div className='mt-8'>
+            <div className='mt-8 lg:hidden'>
               <ContactButton />
             </div>
           </div>
@@ -34,6 +34,15 @@ const TrainComponent = () => {
               priority
             />
           </div>
+        </div>
+      </div>
+      <div className='lg:mt-12 max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20'>
+        <div className='max-w-4xl mx-auto text-center'>
+          <h2 className='text-2xl font-bold text-gray-200 sm:text-4xl'>
+            Experience from more than{' '}
+            <span className='text-indigo-400'> 60 trainings </span>and
+            enablement sessions.
+          </h2>
         </div>
       </div>
     </div>

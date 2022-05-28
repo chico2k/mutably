@@ -15,7 +15,7 @@ type IProps = {
 
 const ReferenceList: React.FC<IProps> = ({ references }) => {
   return (
-    <div className='mt-12 text-gray-100 grid gap-28 lg:gap-28'>
+    <div className='mt-8 text-gray-100 grid gap-28 lg:gap-28'>
       {references.map((reference, index) => {
         return (
           <div key={index}>

@@ -46,10 +46,10 @@ const features = [
 const ServicesDetailComponent = () => {
   return (
     <div className='max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 '>
-      <div className='mx-auto'>
-        <h2 className='text-4xl font-extrabold text-gray-100'>All-in-one </h2>
-      </div>
-      <dl className='mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8'>
+      <h2 className='max-auto text-4xl font-extrabold text-gray-100'>
+        Comprehensive consulting services{' '}
+      </h2>
+      <dl className='mt-16 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8'>
         {features.map((feature) => (
           <div key={feature.name} className='relative'>
             <dt>
@@ -57,11 +57,11 @@ const ServicesDetailComponent = () => {
                 className='absolute h-6 w-6 text-indigo-400'
                 aria-hidden='true'
               />
-              <p className='ml-9 text-lg leading-6 font-medium text-indigo-400'>
+              <p className='ml-9 text-base leading-6  text-indigo-400 uppercase'>
                 {feature.name}
               </p>
             </dt>
-            <dd className='mt-2 ml-9 text-base text-gray-100'>
+            <dd className='mt-2 ml-9 text-sm text-gray-100'>
               {feature.description}
             </dd>
           </div>

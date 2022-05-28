@@ -21,9 +21,7 @@ const people: IPeople[] = [
 const TeamComponent = () => {
   return (
     <div className='max-w-7xl mx-auto my-16 px-4 sm:px-6 md:my-24 lg:px-8 '>
-      <h2 className='text-4xl py-8 font-extrabold text-gray-100'>
-        Meet the leadership
-      </h2>
+      <h2 className='sr-only'>Mario Galla</h2>
       <ul
         role='list'
         className='mt-8 sm:mt-12 grid grid-cols-1 gap-8 space-y-12 sm:space-y-0 lg:gap-x-8 lg:space-y-0 relative'
@@ -34,31 +32,29 @@ const TeamComponent = () => {
               <div className='w-full md:w-4/5 aspect-square relative  overflow-hidden '>
                 <NextImage
                   layout='fill'
-                  className='shadow-lg object-cover rounded-lg  object-center '
+                  className='shadow-lg object-cover rounded-lg  object-center grayscale'
                   src={person.imageUrl}
-                  alt={`${person.name}Profile Picture`}
+                  alt={`${person.name} Profile Picture`}
                   priority={true}
                 />
               </div>
               <div className='mt-16  pb-32  sm:col-span-2 sm:mt-0'>
-                <div className='space-y-4'>
-                  <div className='text-3xl leading-6 font-medium space-y-1 text-indigo-400 mb-6 uppercase'>
+                <div className='space-y-10'>
+                  <div className='text-4xl leading-6 font-medium space-y-1 text-indigo-400 mb-6 uppercase'>
                     <h3>{person.name}</h3>
                   </div>
-                  <div className='text-base'>
-                    <p className='text-gray-200 max-w-2xl'>{person.bio}</p>
-                  </div>
-                  <div className='pt-4 font-medium'>
-                    <NextLink href={person.detailUrl}>
-                      <a className='inline-flex items-center text-indigo-400 transition-all rounded-lg  border-indigo-400 hover:text-indigo-300 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-indigo-500"'>
-                        <span className=''>Click for more</span>
-                        <span>
-                          <ArrowNarrowRightIcon className='ml-2 -mr-1 h-5 w-5' />
-                        </span>
-                      </a>
-                    </NextLink>
-                  </div>
+                  <p className='text-gray-200 max-w-2xl text-base'>
+                    {person.bio}
+                  </p>
                 </div>
+                <NextLink href={person.detailUrl}>
+                  <a className='mt-2 text-base inline-flex items-center text-gray-500 transition-all rounded-md group hover:text-indigo-300 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-indigo-500"'>
+                    <span>
+                      <ArrowNarrowRightIcon className='border-gray-700 hover:text-indigo-300  h-5 w-5' />
+                    </span>
+                    <span className=' ml-1 -mr-1 '>more</span>
+                  </a>
+                </NextLink>
               </div>
             </div>
           </li>
