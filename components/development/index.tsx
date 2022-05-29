@@ -5,14 +5,16 @@ const DevelopmentComponent = () => {
   return (
     <div className='max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 '>
       <div className='mx-auto'>
-        <h2 className='text-4xl font-extrabold text-gray-100'>We love tech</h2>
-        <p className='text-gray-200 mt-6 max-w-4xl'>
-          We are using the newest and fastest technologies in the market for our
-          development or internal proccsses. Some of the things we use at
-          mutably:
+        <h2 className='text-4xl font-extrabold text-gray-100'>
+          We are using the{' '}
+          <span className='text-indigo-400'> newest and fastest </span>
+          technologies in the market for our development or internal proccsses.
+        </h2>
+        <p className='text-gray-200 mt-16 max-w-4xl'>
+          Some of the things we use at mutably:
         </p>
       </div>
-      <div className='pt-12 pb-48'>
+      <div className='pt-2 pb-48'>
         <div className='grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5 items-center'>
           <a href='https://reactjs.org/' target={'_blank'} rel='noreferrer'>
             <div className='col-span-1 flex justify-center md:col-span-2 lg:col-span-1 w-32 '>

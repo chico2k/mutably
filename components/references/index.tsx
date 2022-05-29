@@ -10,12 +10,11 @@ const ReferencesComponent = () => {
         <ReferenceList references={references} />
         <div className='text-sm text-gray-500 mt-36 max-w-4xl'>
           <span>
-            ** Disclaimer: References are potentially subject to invidual work
+            ** Disclaimer: References might be subject to invidual work
             experiences of our employees and partners. They may have been done
             by the employees within their previous work experiences or in
-            coperation with other consultancies. Mutably only refers to the
-            individual roles of our employees and partners within those
-            projects. **
+            coperation with other consultancies. We only refers to the
+            individual roles within those projects. **
           </span>
         </div>
       </div>

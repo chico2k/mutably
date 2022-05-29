@@ -20,6 +20,7 @@ export type IDetailFields = {
   name: string;
   imageUrl: string;
   email: string;
+  phone: string,
   education: string;
   location: string;
   languages: string[];

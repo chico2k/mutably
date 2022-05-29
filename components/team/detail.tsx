@@ -2,15 +2,15 @@ import React from 'react';
 import { references } from '../../data/references';
 import { IDetailFields } from '../../data/types';
 import ReferenceList from '../references/referenceList';
+import DetailDividerComponent from './Components/divider';
+import PreviousWorkExperienceComponent from './Components/prevExperience';
 import {
+  UserIcon,
   CheckIcon,
   LocationMarkerIcon,
   AcademicCapIcon,
   SpeakerphoneIcon,
-} from '@heroicons/react/solid';
-import DetailDividerComponent from './Components/divider';
-import PreviousWorkExperienceComponent from './Components/prevExperience';
-import { UserIcon } from '@heroicons/react/outline';
+} from '@heroicons/react/outline';
 import NextImage from 'next/image';
 
 type IProps = {

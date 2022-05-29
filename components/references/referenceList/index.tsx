@@ -15,13 +15,13 @@ type IProps = {
 
 const ReferenceList: React.FC<IProps> = ({ references }) => {
   return (
-    <div className='mt-8 text-gray-100 grid gap-28 lg:gap-28'>
+    <div className='mt-8 text-gray-100 grid gap-28 lg:gap-32'>
       {references.map((reference, index) => {
         return (
           <div key={index}>
             <div className='flex justify-betwe'>
               <h3 className='font-semibold text-2xl text-indigo-400 tracking-wide uppercase'>
-                {reference.name}, {reference.country}
+                {reference.name}
               </h3>
             </div>
             <div className='pt-2 '>
@@ -34,8 +34,8 @@ const ReferenceList: React.FC<IProps> = ({ references }) => {
                         aria-hidden='true'
                       />
                     </div>
-                    <div className='ml-3 text-gray-500'>
-                      <p>{reference.industry}</p>
+                    <div className='ml-3 text-gray-500 items-center flex '>
+                      {reference.industry}
                     </div>
                   </div>
                 </li>
@@ -47,8 +47,8 @@ const ReferenceList: React.FC<IProps> = ({ references }) => {
                         aria-hidden='true'
                       />
                     </div>
-                    <div className='ml-3 text-gray-500'>
-                      <p>{reference.projectScope}</p>
+                    <div className='ml-3 text-gray-500 items-center flex'>
+                      {reference.projectScope}
                     </div>
                   </div>
                 </li>
@@ -60,8 +60,8 @@ const ReferenceList: React.FC<IProps> = ({ references }) => {
                         aria-hidden='true'
                       />
                     </div>
-                    <div className='ml-3 text-gray-500'>
-                      <p>{reference.technology}</p>
+                    <div className='ml-3 text-gray-500 items-center flex'>
+                      {reference.technology}
                     </div>
                   </div>
                 </li>
@@ -73,8 +73,8 @@ const ReferenceList: React.FC<IProps> = ({ references }) => {
                         aria-hidden='true'
                       />
                     </div>
-                    <div className='ml-3 text-gray-500'>
-                      <p>{reference.employees} employees</p>
+                    <div className='ml-3 text-gray-500 items-center flex'>
+                      {reference.employees} employees
                     </div>
                   </div>
                 </li>
@@ -86,8 +86,8 @@ const ReferenceList: React.FC<IProps> = ({ references }) => {
                         aria-hidden='true'
                       />
                     </div>
-                    <div className='ml-3 text-gray-500'>
-                      <p>{reference.role}</p>
+                    <div className='ml-3 text-gray-500 items-center flex'>
+                      {reference.role}
                     </div>
                   </div>
                 </li>
@@ -99,8 +99,8 @@ const ReferenceList: React.FC<IProps> = ({ references }) => {
                         aria-hidden='true'
                       />
                     </div>
-                    <div className='ml-3 text-gray-500'>
-                      <p>{reference.year}</p>
+                    <div className='ml-3 text-gray-500 items-center flex'>
+                      {reference.year}
                     </div>
                   </div>
                 </li>
@@ -113,7 +113,7 @@ const ReferenceList: React.FC<IProps> = ({ references }) => {
                 return (
                   <span
                     key={index}
-                    className='inline-block bg-indigo-100 rounded-full px-3 py-1 text-xs font-semibold text-indigo-900 mr-2 mb-2'
+                    className='inline-block bg-indigo-200 rounded-full px-3 py-1 text-xs font-semibold text-indigo-900 mr-2 mb-2'
                   >
                     {tag}
                   </span>
