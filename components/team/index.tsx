@@ -15,7 +15,7 @@ const TeamComponent = () => {
           return (
             <li key={person.name} className='sm:py-8'>
               <div className=' w-fullspace-y-4 sm:grid sm:grid-cols-3 lg:grid-cols-4 sm:items-start sm:gap-6 sm:space-y-0'>
-                <div className='w-full md:w-4/5 aspect-square relative  overflow-hidden '>
+                <div className='w-4/5 aspect-square relative  overflow-hidden '>
                   <NextImage
                     layout='fill'
                     className='shadow-lg object-cover rounded-lg  object-center'

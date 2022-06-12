@@ -6,8 +6,11 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>mutably</title>
-        <meta name='description' content='mutably' />
+        <title>mutably | Consulting. Training. Development</title>
+        <meta
+          name='description'
+          content='mutably | Consulting. Training. Development.'
+        />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Main />

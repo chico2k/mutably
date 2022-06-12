@@ -31,7 +31,7 @@ const DetailComponent: React.FC<IProps> = ({ detailData }) => {
         role='list'
         className='space-y-12 sm:divide-y sm:divide-gray-200 sm:space-y-0 lg:gap-x-8 lg:space-y-0'
       >
-        <div className='relative  h-full md:w-4/5 space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0'>
+        <div className='relative h-full md:w-4/5 space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0'>
           <div className=''>
             <NextImage
               height={300}

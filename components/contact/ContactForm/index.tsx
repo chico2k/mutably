@@ -80,13 +80,13 @@ const ContactForm: React.FC<IProps> = ({ setSuccess, success, setMessage }) => {
             </div>
           );
         return (
-          <form onSubmit={handleSubmit} className='grid grid-cols-1 gap-y-6'>
+          <form onSubmit={handleSubmit} className='grid grid-cols-1 gap-y-4'>
             <ContactFields fieldName='name' autoComplete='name' />
             <ContactFields fieldName='email' autoComplete='email' />
             <ContactFields fieldName='phone' autoComplete='tel' />
             <ContactFields fieldName='company' />
             <ContactFields fieldName='message' textArea />
-            <div className='my-6'>
+            <div className='my-1'>
               <p className='mb-4 text-sm text-red-600' id='robot-error'>
                 {errors['robot'] && touched['robot'] ? errors['robot'] : ' '}
               </p>

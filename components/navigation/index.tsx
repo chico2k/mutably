@@ -79,9 +79,9 @@ const Navigation = () => {
       >
         <Popover.Panel
           focus
-          className='absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top md:hidden'
+          className='absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top md:hidden'
         >
-          <div className='rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden'>
+          <div className='z-30 rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden'>
             <div className='px-5 pt-4 flex items-center justify-between'>
               <div className='w-28 h-16 relative'>
                 <NextImage
