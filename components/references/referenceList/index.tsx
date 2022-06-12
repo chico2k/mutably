@@ -34,7 +34,7 @@ const ReferenceList: React.FC<IProps> = ({ references }) => {
                         aria-hidden='true'
                       />
                     </div>
-                    <div className='ml-3 text-gray-500 items-center flex '>
+                    <div className='ml-3 text-gray-400 items-center flex '>
                       {reference.industry}
                     </div>
                   </div>
@@ -47,7 +47,7 @@ const ReferenceList: React.FC<IProps> = ({ references }) => {
                         aria-hidden='true'
                       />
                     </div>
-                    <div className='ml-3 text-gray-500 items-center flex'>
+                    <div className='ml-3 text-gray-400 items-center flex'>
                       {reference.projectScope}
                     </div>
                   </div>
@@ -60,7 +60,7 @@ const ReferenceList: React.FC<IProps> = ({ references }) => {
                         aria-hidden='true'
                       />
                     </div>
-                    <div className='ml-3 text-gray-500 items-center flex'>
+                    <div className='ml-3 text-gray-400 items-center flex'>
                       {reference.technology}
                     </div>
                   </div>
@@ -73,7 +73,7 @@ const ReferenceList: React.FC<IProps> = ({ references }) => {
                         aria-hidden='true'
                       />
                     </div>
-                    <div className='ml-3 text-gray-500 items-center flex'>
+                    <div className='ml-3 text-gray-400 items-center flex'>
                       {reference.employees} employees
                     </div>
                   </div>
@@ -86,7 +86,7 @@ const ReferenceList: React.FC<IProps> = ({ references }) => {
                         aria-hidden='true'
                       />
                     </div>
-                    <div className='ml-3 text-gray-500 items-center flex'>
+                    <div className='ml-3 text-gray-400 items-center flex'>
                       {reference.role}
                     </div>
                   </div>
@@ -99,7 +99,7 @@ const ReferenceList: React.FC<IProps> = ({ references }) => {
                         aria-hidden='true'
                       />
                     </div>
-                    <div className='ml-3 text-gray-500 items-center flex'>
+                    <div className='ml-3 text-gray-400 items-center flex'>
                       {reference.year}
                     </div>
                   </div>

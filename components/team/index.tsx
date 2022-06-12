@@ -38,7 +38,7 @@ const TeamComponent = () => {
                       {person.bio}
                     </p>
                   </div>
-                  <NextLink href={person.detailUrl}>
+                  <NextLink href={person.detailUrl} as={person.detailUrl}>
                     <a className='mt-2 text-base inline-flex items-center text-gray-500 transition-all rounded-md group hover:text-indigo-300 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-indigo-500"'>
                       <span>
                         <ArrowNarrowRightIcon className='border-gray-700 hover:text-indigo-300  h-5 w-5' />
