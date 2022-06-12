@@ -36,6 +36,7 @@ const Navigation = () => {
                     className='object-contain'
                     src='/logo/logo_bright.png'
                     alt=''
+                    priority={true}
                   />
                 </a>
               </NextLink>
@@ -88,6 +89,7 @@ const Navigation = () => {
                   className='object-contain'
                   src='/logo/logo_dark.png'
                   alt=''
+                  priority={true}
                 />
               </div>
               <div className='-mr-2'>
