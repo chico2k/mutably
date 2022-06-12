@@ -92,8 +92,9 @@ export const references: IReferences[] = [
     tags: [
       'Project Management',
       'Cloud Preperation',
-      'Recruiting Management & Marketing',
+      'Recruiting Mgmt. & Marketing',
       'Custom Reporting',
+      'Training',
     ],
     referenceEmployee: EMPLOYEE_DATA.marioGalla,
   },
@@ -128,7 +129,7 @@ export const references: IReferences[] = [
     description:
       'Workstream Lead for a global Learning Management System implementation. Driving Global Template setup with workshop moderation and functional as well technical design phase. Subsequent roll-out phase for Europe, Asia Pacific and South America with workshops worldwide (e.g. Germany,  Brazil). Preparation end execution of data migration to replace legacy applications.',
     technology: 'SAP SuccessFactors',
-    year: '2016 - 2020',
+    year: '2014 - 2016',
     country: 'Germany',
     projectScope: 'Global',
 
@@ -137,6 +138,7 @@ export const references: IReferences[] = [
       'Data Migration',
       'Custom Reporting',
       'LMS',
+      'Training',
     ],
     referenceEmployee: EMPLOYEE_DATA.marioGalla,
   },

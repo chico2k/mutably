@@ -52,9 +52,9 @@ const features = [
 
 const ServicesComponent = () => {
   return (
-    <section className='bg-gray-800 pb-36  pt-32 z -mt-32'>
+    <section className='bg-gray-800 pb-36  pt-32'>
       <div className='max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8'>
-        <h2 className=' text-left mb-16 text-4xl text-white sm:text-center md:text-5xl md:mb-24 lg:text-6xl'>
+        <h2 className=' text-left mb-16 text-4xl text-white lg:text-center md:text-5xl md:mb-24 lg:text-6xl'>
           Our offerings.
         </h2>
 

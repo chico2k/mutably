@@ -31,10 +31,6 @@ const validationSchema = () =>
       .oneOf([false], 'The reCAPTCHA must be completed successfully'),
   });
 
-function onChange(value: string) {
-  return console.log('Captcha value:', value);
-}
-
 const ContactForm: React.FC<IProps> = ({ setSuccess, success }) => {
   const { contactSubmitHandler } = useContactSubmit();
   if (success) return null;

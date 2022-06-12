@@ -4,33 +4,33 @@ import NextImage from 'next/image';
 
 const HeroComponent = () => {
   return (
-    <div className='overflow-hidden bg-gray-900 h-screen flex items-center relative'>
-      <div className='-mt-60 text-center px-4 mx-auto sm:text-center sm:px-6 lg:px-8 lg:-mt-96'>
-        <h1 className='text-4xl tracking-tighter  text-white sm:mt-5 sm:text-6xl xl:text-5xl'>
-          <br />
-          <span className='block text-4xl text-indigo-400 md:text-5xl w-full lg:text-7xl'>
-            People-centric Digitalization.
-          </span>
-        </h1>
-        <p className='block mt-2 text-sm tracking-wider uppercase text-gray-400 md:text-base lg:text-lg'>
-          Consulting. Training. Development.
-        </p>
-        <div className='my-8 md:hidden relative'>
-          <ContactButton />
+    <div className=' relative max-w-5xl mx-auto text-center z-10 px-4 sm:px-6 lg:max-w-7xl lg:px-8'>
+      <div className=' bg-gray-900 flex flex-col items-center relative'>
+        <div className='my-24 md:my-44'>
+          <h1 className='text-4xl tracking-tighter  text-white sm:text-6xl xl:text-5xl'>
+            <span className='block text-5xl text-indigo-400 md:text-7xl w-full lg:text-7xl'>
+              People-centric Digitalization
+            </span>
+          </h1>
+          <p className='block mt-4 text-sm tracking-wider uppercase text-gray-400 md:text-base lg:text-lg'>
+            Consulting. Training. Development.
+          </p>
+          <div className='my-12 lg:hidden relative'>
+            <ContactButton />
+          </div>
         </div>
+
+        <NextImage
+          className='z-10'
+          src='/images/bg-3.png'
+          alt='People working and reading'
+          objectFit='contain'
+          height={213}
+          width={750}
+          priority={true}
+        />
       </div>
-      <div className='mx-4 absolute inset-x-0 z-10 bottom-20 md:bottom-10 lg:bottom-5'>
-        <div className='mx-auto px-12  md:max-w-3xl lg:max-w-6xl h-32 md:h-96 relative md:my-8 '>
-          <NextImage
-            src='/images/bg-3.png'
-            alt='People working and reading'
-            objectFit='contain'
-            layout='fill'
-            priority={true}
-          />
-        </div>
-      </div>
-      <div className='bg-gray-800 h-32 absolute inset-x-0 -bottom-4 -z-0 md:h-56 lg:h-40'></div>
+      <div className='bg-gray-800 h-12 absolute inset-x-0 -bottom-4 -z-0'></div>
     </div>
   );
 };

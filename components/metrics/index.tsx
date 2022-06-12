@@ -29,11 +29,11 @@ const MetricsComponent = () => {
   return (
     <>
       <section>
-        <div className='max-w-7xl mx-auto px-4 pt-16 sm:px-6 lg:px-8 lg:pb-8 lg:pt-32'>
-          <h2 className='text-left text-4xl  text-gray-100 sm:text-center sm:text-5xl lg:text-6xl'>
+        <div className=' lg:text-center  pt-16 lg:pb-8 lg:pt-32 bg-gray-900 items-end max-w-lg mx-auto px-4 sm:px-6 sm:max-w-xl lg:max-w-7xl lg:px-8 xl:max-w-7xl '>
+          <h2 className='text-left text-4xl  text-gray-100  sm:text-5xl lg:text-7xl'>
             100% satisfaction
           </h2>
-          <p className='text-left max-w-xl mt-2 mx-auto text-base md:text-lg text-gray-500 sm:text-center'>
+          <p className='text-left max-w-xl mt-2 mx-auto text-base md:text-lg text-gray-500'>
             We deliver with passion and full commitment.
           </p>
         </div>
@@ -55,7 +55,7 @@ const MetricsComponent = () => {
               ))}
             </div>
           </div>
-          <div className='mx-auto w-full relative items-center md:mt-12'>
+          <div className='mt-12 mx-auto w-full relative items-center'>
             <NextImage
               layout='responsive'
               height={4643}

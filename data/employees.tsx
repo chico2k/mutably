@@ -16,7 +16,7 @@ export const EMPLOYEE_DATA: IDetailData = {
       'SAP SuccessFactors Workforce Analytics  Functional Consultant - Associate',
       'SAP SuccessFactors Functional Reporting - Associate',
     ],
-    bio: 'Mario has more than 9 years of experience in HR digitalization projects as well as implementing SAP SuccessFactors for a variety clients & industries. He has a diploma in Business Administration with focus on Human Resources.',
+    bio: 'Mario has more than 9 years of experience in HR digitalization projects as well as implementing SAP SuccessFactors for a variety of clients & industries. He has a diploma in Business Administration with focus on Human Resources.',
     previousWorkExperience: [
       {
         id: 1,

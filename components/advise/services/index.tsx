@@ -46,8 +46,8 @@ const features = [
 const ServicesDetailComponent = () => {
   return (
     <div className='max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 '>
-      <h2 className='max-auto text-4xl font-extrabold text-gray-100'>
-        Comprehensive consulting services{' '}
+      <h2 className='max-auto text-2xl font-extrabold text-gray-100 lg:text-4xl'>
+        Experience from more than 30 digialization transformation projects.
       </h2>
       <dl className='mt-16 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8'>
         {features.map((feature) => (
