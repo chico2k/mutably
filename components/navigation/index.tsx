@@ -28,7 +28,7 @@ const Navigation = () => {
         >
           <div className='flex items-center flex-1'>
             <div className='flex items-center justify-between w-full md:w-auto'>
-              <NextLink href='/'>
+              <NextLink href='/' as='/'>
                 <a className='w-28 h-16 relative'>
                   <span className='sr-only'>mutably</span>
                   <NextImage

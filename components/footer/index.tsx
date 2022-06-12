@@ -4,7 +4,7 @@ const navigation = {
   solutions: [
     { name: 'Advise', href: '/advise' },
     { name: 'Develop', href: '/develop' },
-    { name: 'Train', href: 'train' },
+    { name: 'Train', href: '/train' },
   ],
 
   company: [

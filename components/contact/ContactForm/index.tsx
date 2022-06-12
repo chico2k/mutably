@@ -6,7 +6,8 @@ import ContactFields from './Field';
 import { ToastContainer, toast } from 'react-toastify';
 import Spinner from '../../Layout/Spinner';
 import dynamic from 'next/dynamic';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import ReCAPTCHAComponent from './CaptachField';
 
 const ReCAPTCHA = dynamic(() => import('react-google-recaptcha'));
 
@@ -81,6 +82,7 @@ const ContactForm: React.FC<IProps> = ({ setSuccess, success, setMessage }) => {
               <Spinner />
             </div>
           );
+
         return (
           <form onSubmit={handleSubmit} className='grid grid-cols-1 gap-y-4'>
             <ContactFields fieldName='name' autoComplete='name' />
@@ -95,11 +97,13 @@ const ContactForm: React.FC<IProps> = ({ setSuccess, success, setMessage }) => {
               <p className='mb-4 text-sm text-red-600' id='robot-error'>
                 {status && status['response'] ? status['response'] : ' '}
               </p>
-              <ReCAPTCHA
-                sitekey='6LePoBsgAAAAANy765Nz0Jl4gtYgXsJego5D8nHT'
-                onChange={() => setFieldValue('robot', false)}
-                theme={'dark'}
-              />
+              {!!Object.keys(touched).length && (
+                <ReCAPTCHA
+                  sitekey='6LePoBsgAAAAANy765Nz0Jl4gtYgXsJego5D8nHT'
+                  onChange={() => setFieldValue('robot', false)}
+                  theme={'dark'}
+                />
+              )}
             </div>
             <div className='flex'>
               <button
