@@ -58,9 +58,9 @@ const ServicesComponent = () => {
           Our offerings.
         </h2>
 
-        <dl className='space-y-8 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-10'>
+        <ul className='space-y-8 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-10'>
           {features.map((feature) => (
-            <div
+            <li
               key={feature.name}
               className='flex flex-col bg-gray-900  shadow-gray-700/40  rounded-2xl shadow-xl py-8  '
             >
@@ -99,20 +99,21 @@ const ServicesComponent = () => {
                     <ul className='mt-5 ml-4 '>
                       {feature.bullets.map((bullet) => {
                         return (
-                          <div key={bullet} className=''>
-                            <li className='text-gray-300 text-sm list-disc mb-1'>
-                              {bullet}
-                            </li>
-                          </div>
+                          <li
+                            key={bullet}
+                            className='text-gray-300 text-sm list-disc mb-1'
+                          >
+                            {bullet}
+                          </li>
                         );
                       })}
                     </ul>
                   </div>
                 </div>
               </div>
-            </div>
+            </li>
           ))}
-        </dl>
+        </ul>
       </div>
     </section>
   );

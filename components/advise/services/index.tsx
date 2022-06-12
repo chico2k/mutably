@@ -51,20 +51,20 @@ const ServicesDetailComponent = () => {
       </h2>
       <dl className='space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8'>
         {features.map((feature) => (
-          <div key={feature.name} className='relative'>
-            <dt>
+          <React.Fragment key={feature.name}>
+            <dt className='relative'>
               <CheckIcon
                 className='absolute h-6 w-6 text-indigo-400'
                 aria-hidden='true'
               />
-              <p className='ml-9 text-base leading-6  text-indigo-400 uppercase'>
+              <span className='ml-9 text-base leading-6  text-indigo-400 uspanpercase'>
                 {feature.name}
-              </p>
+              </span>
             </dt>
             <dd className='mt-2 ml-9 text-sm text-gray-100'>
               {feature.description}
             </dd>
-          </div>
+          </React.Fragment>
         ))}
       </dl>
     </div>

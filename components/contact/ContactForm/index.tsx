@@ -3,9 +3,12 @@ import { Formik } from 'formik';
 import useContactSubmit from './useContactSubmit';
 import { IContactFormValues } from '../../../types';
 import ContactFields from './Field';
-import ReCAPTCHA from 'react-google-recaptcha';
 import { ToastContainer, toast } from 'react-toastify';
 import Spinner from '../../Layout/Spinner';
+import dynamic from 'next/dynamic';
+import { useState } from 'react';
+
+const ReCAPTCHA = dynamic(() => import('react-google-recaptcha'));
 
 const initialValues: IContactFormValues = {
   name: '',
@@ -72,7 +75,6 @@ const ContactForm: React.FC<IProps> = ({ setSuccess, success, setMessage }) => {
         status,
         isSubmitting,
       }) => {
-        console.log(isSubmitting);
         if (isSubmitting)
           return (
             <div>

@@ -4,9 +4,9 @@ import NextImage from 'next/image';
 
 const HeroComponent = () => {
   return (
-    <div className=' relative max-w-5xl mx-auto text-center z-10 px-4 sm:px-6 lg:max-w-7xl lg:px-8'>
+    <div className='relative max-w-5xl mx-auto text-center z-10 px-4 sm:px-6 lg:max-w-7xl lg:px-8'>
       <div className=' bg-gray-900 flex flex-col items-center relative'>
-        <div className='my-24 md:my-44'>
+        <div className='my-24 md:my-44 lg:my-56'>
           <h1 className='text-4xl tracking-tighter  text-white sm:text-6xl xl:text-5xl'>
             <span className='block text-5xl text-indigo-400 md:text-7xl w-full lg:text-7xl'>
               People-centric Digitalization
@@ -19,16 +19,16 @@ const HeroComponent = () => {
             <ContactButton />
           </div>
         </div>
-
-        <NextImage
-          className='z-10'
-          src='/images/bg-3.png'
-          alt='People working and reading'
-          objectFit='contain'
-          height={213}
-          width={750}
-          priority={true}
-        />
+        <div className='w-full h-64 relative'>
+          <NextImage
+            layout='fill'
+            className='z-10'
+            src='/images/bg-3.png'
+            alt='People working and reading'
+            objectFit='contain'
+            priority={true}
+          />
+        </div>
       </div>
       <div className='bg-gray-800 h-12 absolute inset-x-0 -bottom-4 -z-0'></div>
     </div>

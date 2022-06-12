@@ -23,7 +23,7 @@ const ContactComponent: React.FC<IProps> = ({}) => {
 
         {success ? (
           <div>
-            <div className='mt-8 py-4 px-4 bg-gray-200 rounded-lg'>
+            <div className='mx-auto mt-8 py-4 px-4 bg-gray-200 rounded-lg max-w-3xl'>
               <div className='font-bold mb-4'>
                 Thanks for contacting us. Here is a copy of your request
               </div>

@@ -22,8 +22,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     });
   });
 
-  // console.log('setLoading', isLoading);
-
   return (
     <>
       <div className='bg-gray-900'>

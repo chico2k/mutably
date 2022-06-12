@@ -33,7 +33,7 @@ const MetricsComponent = () => {
           <h2 className='text-left lg:text-center text-4xl  text-gray-100  sm:text-5xl lg:text-7xl'>
             100% satisfaction
           </h2>
-          <p className='text-left lg:text-center  mt-2 mx-auto text-base md:text-lg text-gray-500'>
+          <p className='text-left lg:text-center  mt-2 mx-auto text-base md:text-lg text-gray-400'>
             We deliver with passion and full commitment.
           </p>
         </div>
