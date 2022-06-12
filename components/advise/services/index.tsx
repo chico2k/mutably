@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckIcon } from '@heroicons/react/outline';
+import ComponentSubtitle from '../../Layout/ComponentSubTitle';
 
 const features = [
   {
@@ -46,9 +47,9 @@ const features = [
 const ServicesDetailComponent = () => {
   return (
     <div className='max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 '>
-      <h2 className='mb-28 max-auto text-2xl font-extrabold text-gray-100 lg:text-4xl'>
+      <ComponentSubtitle>
         Experience from more than 30 digitalization transformation projects.
-      </h2>
+      </ComponentSubtitle>
       <div className='space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8'>
         {features.map((feature) => (
           <dl key={feature.name} className='relative'>

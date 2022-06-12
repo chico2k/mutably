@@ -21,7 +21,13 @@ const Navigation = () => {
 
   return (
     <Popover as='header' className='absolute w-full z-40'>
-      <div className='bg-gray-900 pt-2 '>
+      <div
+        className='bg-gray-900 pt-2 
+      xs:pt-4
+      md:pt-6
+      lg:pt-8
+       '
+      >
         <nav
           className='relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6'
           aria-label='Global'
@@ -47,7 +53,7 @@ const Navigation = () => {
                 </Popover.Button>
               </div>
             </div>
-            <div className='hidden space-x-7 md:flex md:ml-16 lg:space-x-10'>
+            <div className='hidden space-x-7 md:flex md:ml-20 lg:space-x-10'>
               {navigation.map((item) => {
                 const active =
                   router.pathname === item.href

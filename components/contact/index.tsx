@@ -40,7 +40,7 @@ const ContactComponent: React.FC<IProps> = ({}) => {
       </div>
 
       <div className='bg-gray-900 py-10  lg:col-span-3 lg:py-12'>
-        <div className='max-w-lg mx-auto lg:max-w-3xl'>
+        <div className='max-w-lg mx-auto lg:max-w-xl'>
           <ContactForm
             setSuccess={setSuccess}
             success={success}
