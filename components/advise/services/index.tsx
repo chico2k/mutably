@@ -49,24 +49,24 @@ const ServicesDetailComponent = () => {
       <h2 className='mb-28 max-auto text-2xl font-extrabold text-gray-100 lg:text-4xl'>
         Experience from more than 30 digitalization transformation projects.
       </h2>
-      <dl className='space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8'>
+      <div className='space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8'>
         {features.map((feature) => (
-          <React.Fragment key={feature.name}>
-            <dt className='relative'>
+          <dl key={feature.name} className='relative'>
+            <dt>
               <CheckIcon
                 className='absolute h-6 w-6 text-indigo-400'
                 aria-hidden='true'
               />
-              <span className='ml-9 text-base leading-6  text-indigo-400 uspanpercase'>
+              <p className='ml-9 text-base leading-6  text-indigo-400 uppercase'>
                 {feature.name}
-              </span>
+              </p>
             </dt>
             <dd className='mt-2 ml-9 text-sm text-gray-100'>
               {feature.description}
             </dd>
-          </React.Fragment>
+          </dl>
         ))}
-      </dl>
+      </div>
     </div>
   );
 };
