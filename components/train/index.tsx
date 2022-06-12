@@ -24,9 +24,9 @@ const TrainComponent = () => {
             />
           </div>
           <div
-            className='text-gray-300 text-sm my-8 max-w-3xl mx-auto h-full
+            className='text-gray-300 text-sm my-8 max-w-md h-full
         xs:text-base
-        lg:text-left lg:text-xl lg:flex lg:items-center'
+        lg:text-left lg:text-lg lg:flex lg:items-center'
           >
             We offer a broad variety of trainings such as SAP SuccessFactors,
             Project Management, Web Development. Professional remote or on-site

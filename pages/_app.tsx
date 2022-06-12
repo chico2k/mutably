@@ -26,15 +26,13 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <div className='bg-gray-900'>
         <Navigation />
-        {isLoading ? (
-          <Spinner />
-        ) : (
-          <>
-            <Component {...pageProps} />;
-            <ToastContainer />
-            <FooterComponent />
-          </>
-        )}
+        <>
+          {isLoading && <Spinner />}
+          <Component {...pageProps} />
+
+          <ToastContainer />
+          <FooterComponent />
+        </>
       </div>
     </>
   );
