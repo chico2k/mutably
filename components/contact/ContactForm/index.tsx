@@ -5,6 +5,7 @@ import { IContactFormValues } from '../../../types';
 import ContactFields from './Field';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { ToastContainer, toast } from 'react-toastify';
+import Spinner from '../../Layout/Spinner';
 
 const initialValues: IContactFormValues = {
   name: '',
@@ -52,6 +53,8 @@ const ContactForm: React.FC<IProps> = ({ setSuccess, success, setMessage }) => {
         });
 
         setMessage(vals);
+        setSuccess(true);
+
         const response = await contactSubmitHandler(vals);
 
         if (!response) {
@@ -59,11 +62,23 @@ const ContactForm: React.FC<IProps> = ({ setSuccess, success, setMessage }) => {
             'response': 'Something went wrong. Please try again later',
           });
         }
-
-        return setSuccess(true);
       }}
     >
-      {({ handleSubmit, errors, touched, setFieldValue, status, values }) => {
+      {({
+        handleSubmit,
+        errors,
+        touched,
+        setFieldValue,
+        status,
+        isSubmitting,
+      }) => {
+        console.log(isSubmitting);
+        if (isSubmitting)
+          return (
+            <div>
+              <Spinner />
+            </div>
+          );
         return (
           <form onSubmit={handleSubmit} className='grid grid-cols-1 gap-y-6'>
             <ContactFields fieldName='name' autoComplete='name' />
@@ -87,12 +102,13 @@ const ContactForm: React.FC<IProps> = ({ setSuccess, success, setMessage }) => {
             <div className='flex'>
               <button
                 type='submit'
+                disabled={isSubmitting}
                 className={`
-              
-              py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
+                      py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
               >
                 Submit
               </button>
+
               <ToastContainer />
             </div>
           </form>

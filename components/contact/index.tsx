@@ -15,7 +15,7 @@ const ContactComponent: React.FC<IProps> = ({}) => {
   });
 
   return (
-    <section className='relative  max-w-3xl mx-auto px-4 sm:px-6 lg:px-8'>
+    <section className='max-w-3xl mx-auto px-4 sm:px-6 lg:px-8'>
       <div className='lg:pb-8 bg-gray-900 items-end max-w-lg lg:max-w-7xl'>
         <h2 className='pt-32 text-left mt-1 text-4xl text-gray-100 sm:text-5xl lg:text-6xl '>
           Get in touch with us.
