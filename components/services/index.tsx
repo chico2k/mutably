@@ -9,7 +9,7 @@ const features = [
   {
     name: 'Advise',
     description:
-      'Professional steering and advise of holistic digitalization projects in Humman Resources. From National to global, from public to pharma.',
+      'Professional steering and advise of holistic digitalization projects in Human Resources. From National to global, from public to pharma.',
     icon: UserGroupIcon,
     bullets: [
       'Holistic HR Transformation',
@@ -31,13 +31,13 @@ const features = [
       'Next.js',
       'Serverless',
       'Database & Storage',
-      'Infastructure as a Service',
+      'Infrastructure as a Service',
     ],
   },
   {
     name: 'Train',
     description:
-      'Broad variety of trainings such as as SAP SuccessFactors, Project Management, Web Development. Professional remote or on-site execution of trainings.',
+      'Broad variety of trainings such as SAP SuccessFactors, Project Management, Web Development. Professional remote or on-site execution of trainings.',
     icon: AcademicCapIcon,
     bullets: [
       'SAP SuccessFactors',
@@ -45,7 +45,7 @@ const features = [
       'Reporting & Analytics',
       'Development',
       'Design Fundamentals',
-      'Indivdual Coaching',
+      'Individual Coaching',
     ],
   },
 ];

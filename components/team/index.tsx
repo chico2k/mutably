@@ -21,7 +21,6 @@ const TeamComponent = () => {
                     className='shadow-lg object-cover rounded-lg  object-center'
                     src={person.imageUrl}
                     alt={`${person.name} Profile Picture`}
-                    priority={true}
                     blurDataURL={person.imageBlur}
                     placeholder='blur'
                   />

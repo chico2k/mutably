@@ -15,7 +15,7 @@ const TrainComponent = () => {
           <div className='col-span-1'>
             <p className='mt-4 text-lg text-gray-400'>
               <div>
-                We offer a broad variety of trainings such as as SAP
+                We offer a broad variety of trainings such as SAP
                 SuccessFactors, Project Management, Web Development.
                 Professional remote or on-site execution of trainings.
               </div>

@@ -4,16 +4,14 @@ import NextImage from 'next/image';
 const DevelopmentComponent = () => {
   return (
     <div className='max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 '>
-      <div className='mx-auto'>
-        <h2 className='text-xl md:text-2xl lg:text-4xl font-extrabold text-gray-100'>
-          We are using the{' '}
-          <span className='text-indigo-400'> newest and fastest </span>
-          technologies in the market for our development or internal processes.
-        </h2>
-        <p className='text-gray-200 mt-16 max-w-4xl'>
-          Some of the things we use at mutably:
-        </p>
-      </div>
+      <h2 className='mx-auto mb-28 text-xl md:text-2xl lg:text-4xl font-extrabold text-gray-100'>
+        We are using the{' '}
+        <span className='text-indigo-400'> newest and fastest </span>
+        technologies in the market for our development or internal processes.
+      </h2>
+      <p className='text-gray-200 mt-16 max-w-4xl'>
+        Some of the things we use at mutably:
+      </p>
       <div className='pt-2 pb-48'>
         <div className='grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5 items-center'>
           <a href='https://reactjs.org/' target={'_blank'} rel='noreferrer'>
