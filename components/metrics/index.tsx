@@ -29,11 +29,11 @@ const MetricsComponent = () => {
   return (
     <>
       <section>
-        <div className=' lg:text-center  pt-16 lg:pb-8 lg:pt-32 bg-gray-900 items-end max-w-lg mx-auto px-4 sm:px-6 sm:max-w-xl lg:max-w-7xl lg:px-8 xl:max-w-7xl '>
-          <h2 className='text-left text-4xl  text-gray-100  sm:text-5xl lg:text-7xl'>
+        <div className='  pt-16 lg:pb-8 lg:pt-32 bg-gray-900 items-end max-w-lg mx-auto px-4 sm:px-6 sm:max-w-xl lg:max-w-7xl lg:px-8 xl:max-w-7xl  '>
+          <h2 className='text-left lg:text-center text-4xl  text-gray-100  sm:text-5xl lg:text-7xl'>
             100% satisfaction
           </h2>
-          <p className='text-left max-w-xl mt-2 mx-auto text-base md:text-lg text-gray-500'>
+          <p className='text-left lg:text-center  mt-2 mx-auto text-base md:text-lg text-gray-500'>
             We deliver with passion and full commitment.
           </p>
         </div>
@@ -62,6 +62,7 @@ const MetricsComponent = () => {
               width={8119}
               src='/images/metrics-2.png'
               alt='People working on laptops'
+              priority={true}
             />
           </div>
         </div>

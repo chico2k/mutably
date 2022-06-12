@@ -27,7 +27,7 @@ const TrainComponent = () => {
               src='/images/train.png'
               alt=''
               className='object-contain h-full'
-              priority
+              priority={true}
             />
           </div>
         </div>
