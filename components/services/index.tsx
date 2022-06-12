@@ -1,9 +1,9 @@
 import React from 'react';
 import {
   UserGroupIcon,
-  AcademicCapIcon,
-  CloudUploadIcon,
-} from '@heroicons/react/outline';
+  SpeakerphoneIcon,
+  CloudIcon,
+} from '@heroicons/react/solid';
 
 const features = [
   {
@@ -24,7 +24,7 @@ const features = [
     name: 'Develop',
     description:
       'Infrastructure & Integration design as well as efficient and fast development with state of the art tools like React, Next.JS and Serverless.',
-    icon: CloudUploadIcon,
+    icon: CloudIcon,
     bullets: [
       'Integration',
       'React',
@@ -38,7 +38,7 @@ const features = [
     name: 'Train',
     description:
       'Broad variety of trainings such as SAP SuccessFactors, Project Management, Web Development. Professional remote or on-site execution of trainings.',
-    icon: AcademicCapIcon,
+    icon: SpeakerphoneIcon,
     bullets: [
       'SAP SuccessFactors',
       'Project Management',
@@ -52,7 +52,7 @@ const features = [
 
 const ServicesComponent = () => {
   return (
-    <section className='-mt-8 bg-gray-800 pb-36 pt-32'>
+    <section className='z-40 -mt-3 sm:-mt-12 bg-gray-800 pb-36 pt-32'>
       <div className='max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8'>
         <h2 className=' text-left mb-16 text-4xl text-white lg:text-center md:text-5xl md:mb-24 lg:text-6xl'>
           Our offerings.
@@ -79,12 +79,8 @@ const ServicesComponent = () => {
                         <div className='w-full border-t border-gray-500' />
                       </div>
                       <div className='relative flex justify-end'>
-                        <span className='bg-gray-900 pl-2 -mr-1 text-gray-500'>
-                          <feature.icon
-                            width={28}
-                            height={28}
-                            strokeWidth={1.3}
-                          />
+                        <span className='bg-gray-900 pl-2 -mr-1 text-gray-600'>
+                          <feature.icon width={42} height={42} />
                         </span>
                       </div>
                     </div>
