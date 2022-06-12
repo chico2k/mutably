@@ -17,6 +17,8 @@ export type IDetailData = {
 };
 
 export type IDetailFields = {
+  imageBlur: string;
+  detailUrl: string;
   name: string;
   imageUrl: string;
   email: string;

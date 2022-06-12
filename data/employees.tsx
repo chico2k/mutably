@@ -3,6 +3,8 @@ import { IDetailData } from './types';
 export const EMPLOYEE_DATA: IDetailData = {
   marioGalla: {
     imageUrl: '/images/mgalla.jpg',
+    imageBlur: 'data:image/jpeg;base64,/9j/LgM7P@%gy?WBRhV@xZRiJTocr=f5',
+    detailUrl: '/team/mario-galla',
     name: 'Mario Galla',
     email: 'galla@nutably.io',
     phone: '+49 170 9675 488',
