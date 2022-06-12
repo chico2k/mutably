@@ -20,7 +20,7 @@ const Navigation = () => {
   const router = useRouter();
 
   return (
-    <Popover as='header' className='absolute w-full z-40'>
+    <Popover as='header' className='absolute w-full z-40' id='navigation'>
       <div
         className='bg-gray-900 pt-2 
       xs:pt-4
