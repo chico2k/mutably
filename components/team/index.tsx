@@ -23,6 +23,7 @@ const TeamComponent = () => {
                     alt={`${person.name} Profile Picture`}
                     priority={true}
                     blurDataURL={person.imageBlur}
+                    placeholder='blur'
                   />
                 </div>
                 <div className='mt-16  pb-32  sm:col-span-2 sm:mt-0'>

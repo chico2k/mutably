@@ -36,9 +36,11 @@ const DetailComponent: React.FC<IProps> = ({ detailData }) => {
             <NextImage
               height={300}
               width={300}
-              className='object-cover shadow-lg rounded-lg grayscale'
+              className='object-cover shadow-lg rounded-lg'
               src={detailData.imageUrl}
               alt={`${detailData.name}Profile Picture`}
+              placeholder='blur'
+              blurDataURL={detailData.imageBlur}
             />
           </div>
           <div className='sm:col-span-2'>

@@ -4,7 +4,7 @@ interface IProps {
   message?: string;
 }
 const Spinner: React.FC<IProps> = ({ message }) => (
-  <div className='flex items-center justify-center bg-gray-900 '>
+  <div className='min-h-screen flex items-center justify-center bg-gray-900 '>
     <div className='flex flex-col'>
       <div>
         <div className='flex justify-center items-center'>
