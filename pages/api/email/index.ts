@@ -12,7 +12,7 @@ async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
         await sendgrid.send({
             to: formValues.email,
             from: "info@mutably.io",
-            bcc: "info@mutably.io",
+            bcc: ["info@mutably.io", "galla@mutably.io"],
             templateId: "d-3cd29e8234b54725a11e347acc535bb6",
             dynamicTemplateData: {
                 ...formValues,

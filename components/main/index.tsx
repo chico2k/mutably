@@ -10,7 +10,9 @@ export const Main = () => {
       <HeroComponent />
       <ServicesComponent />
       <MetricsComponent />
-      <ContactComponent />
+      <div className='my-32'>
+        <ContactComponent />
+      </div>
     </main>
   );
 };

@@ -4,6 +4,7 @@ import useContactSubmit from './useContactSubmit';
 import { IContactFormValues } from '../../../types';
 import ContactFields from './Field';
 import ReCAPTCHA from 'react-google-recaptcha';
+import { ToastContainer, toast } from 'react-toastify';
 
 const initialValues: IContactFormValues = {
   name: '',
@@ -16,6 +17,7 @@ const initialValues: IContactFormValues = {
 
 interface IProps {
   setSuccess: (status: boolean) => void;
+  setMessage: (values: IContactFormValues) => void;
   success: boolean;
 }
 
@@ -31,14 +33,25 @@ const validationSchema = () =>
       .oneOf([false], 'The reCAPTCHA must be completed successfully'),
   });
 
-const ContactForm: React.FC<IProps> = ({ setSuccess, success }) => {
+const ContactForm: React.FC<IProps> = ({ setSuccess, success, setMessage }) => {
   const { contactSubmitHandler } = useContactSubmit();
+
   if (success) return null;
   return (
     <Formik
       validationSchema={validationSchema}
       initialValues={initialValues}
       onSubmit={async (vals, { setStatus }) => {
+        toast.success('We have received your message!', {
+          position: 'bottom-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+        });
+
+        setMessage(vals);
         const response = await contactSubmitHandler(vals);
 
         if (!response) {
@@ -58,28 +71,29 @@ const ContactForm: React.FC<IProps> = ({ setSuccess, success }) => {
             <ContactFields fieldName='phone' autoComplete='tel' />
             <ContactFields fieldName='company' />
             <ContactFields fieldName='message' textArea />
-            <div>
-              <div className='my-6'>
-                <p className='mb-4 text-sm text-red-600' id='robot-error'>
-                  {errors['robot'] && touched['robot'] ? errors['robot'] : ' '}
-                </p>
-                <p className='mb-4 text-sm text-red-600' id='robot-error'>
-                  {status && status['response'] ? status['response'] : ' '}
-                </p>
-                <ReCAPTCHA
-                  sitekey='6LePoBsgAAAAANy765Nz0Jl4gtYgXsJego5D8nHT'
-                  onChange={() => setFieldValue('robot', false)}
-                  theme={'dark'}
-                />
-              </div>
+            <div className='my-6'>
+              <p className='mb-4 text-sm text-red-600' id='robot-error'>
+                {errors['robot'] && touched['robot'] ? errors['robot'] : ' '}
+              </p>
+              <p className='mb-4 text-sm text-red-600' id='robot-error'>
+                {status && status['response'] ? status['response'] : ' '}
+              </p>
+              <ReCAPTCHA
+                sitekey='6LePoBsgAAAAANy765Nz0Jl4gtYgXsJego5D8nHT'
+                onChange={() => setFieldValue('robot', false)}
+                theme={'dark'}
+              />
+            </div>
+            <div className='flex'>
               <button
                 type='submit'
                 className={`
-                
-                inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
+              
+              py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
               >
                 Submit
               </button>
+              <ToastContainer />
             </div>
           </form>
         );
