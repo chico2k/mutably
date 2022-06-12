@@ -53,7 +53,7 @@ const HeroComponent = () => {
           </div>
           <div
             className='
-          absolute inset-x-0 bottom-0 
+          absolute inset-x-0 bottom-5 
           
           h-24 
           xs:h-36
