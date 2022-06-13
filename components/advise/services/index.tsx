@@ -50,7 +50,10 @@ const ServicesDetailComponent = () => {
       <ComponentSubtitle>
         Experience from more than 30 digitalization transformation projects.
       </ComponentSubtitle>
-      <div className='space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8'>
+      <div
+        className='space-y-9 
+      sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8'
+      >
         {features.map((feature) => (
           <dl key={feature.name} className='relative'>
             <dt>
@@ -62,7 +65,10 @@ const ServicesDetailComponent = () => {
                 {feature.name}
               </p>
             </dt>
-            <dd className='mt-2 ml-9 text-sm text-gray-100'>
+            <dd
+              className='mt-1 ml-9 text-sm text-gray-100
+                          md:mt-2'
+            >
               {feature.description}
             </dd>
           </dl>

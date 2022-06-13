@@ -4,7 +4,7 @@ import NextImage from 'next/image';
 
 const HeroComponent = () => {
   return (
-    <div className='min-h-screen w-full overflow-hidden relative flex justify-center items-center '>
+    <div className='h-screen w-full overflow-hidden relative flex justify-center items-center '>
       <div
         className='h-full flex flex-1 justify-center items-center max-w-5xl mx-auto text-center z-10 px-4  
                     sm:px-6 
@@ -20,8 +20,7 @@ const HeroComponent = () => {
           >
             <h1
               className=' 
-            block  text-indigo-400 
-            
+            block  text-indigo-400            
             text-3xl 
             xs:text-5xl 
             sm:text-6xl 
@@ -50,25 +49,22 @@ const HeroComponent = () => {
             >
               <ContactButton />
             </div>
-            <div
-              className='
-                mt-20
-                relative
-                w-full
-                h-24 
-                xs:h-36
+          </div>
+          <div
+            className='
+                mt-20 absolute w-full h-24 bottom-7 left-0
+                xs:h-36 xs:bottom-10
                 sm:h-40 sm:mt-24
-                lg:h-48 lg:mt-40  '
-            >
-              <NextImage
-                layout='fill'
-                className='z-10 mx-auto w-full'
-                src='/images/bg-3.png'
-                alt='People working and reading'
-                objectFit='contain'
-                priority={true}
-              />
-            </div>
+                lg:h-52 lg:mt-40  '
+          >
+            <NextImage
+              layout='fill'
+              className='z-10 mx-auto w-full'
+              src='/images/bg-3.png'
+              alt='People working and reading'
+              objectFit='contain'
+              priority={true}
+            />
           </div>
         </div>
       </div>
