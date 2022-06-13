@@ -11,7 +11,7 @@ export const Main = () => {
       <ServicesComponent />
       <MetricsComponent />
       <div className='my-32'>
-        <ContactComponent />
+        <ContactComponent header />
       </div>
     </main>
   );

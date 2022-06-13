@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
 import ContactComponent from '../components/contact';
-import ContactForm from '../components/contact/ContactForm';
 
 const ContactPage = () => {
   return (
@@ -11,7 +10,7 @@ const ContactPage = () => {
         <meta name='description' content='mutably contact' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <ContactComponent />
+      <ContactComponent header={false} />
     </div>
   );
 };
