@@ -60,7 +60,7 @@ const HeroComponent = () => {
             <NextImage
               layout='fill'
               className='z-10 mx-auto w-full'
-              src='/images/bg-3.png'
+              src='/images/hero.png'
               alt='People working and reading'
               objectFit='contain'
               priority={true}

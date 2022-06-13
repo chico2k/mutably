@@ -60,8 +60,8 @@ const MetricsComponent = () => {
               layout='responsive'
               height={4643}
               width={8119}
-              src='/images/metrics-2.png'
-              alt='People working on laptops'
+              src='/images/metrics.png'
+              alt='People holding stars'
               priority={true}
             />
           </div>
