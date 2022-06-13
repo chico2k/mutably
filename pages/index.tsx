@@ -4,16 +4,17 @@ import { Main } from '../components/main';
 
 const Home: NextPage = () => {
   return (
-    <>
+    <div>
       <Head>
-        <title>mutably - digital | change | tech</title>
-        <meta name='description' content='mutably - digital | change | tech ' />
+        <title>mutably | Consulting. Training. Development</title>
+        <meta
+          name='description'
+          content='mutably | Consulting. Training. Development.'
+        />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Main />
-
-      <footer></footer>
-    </>
+    </div>
   );
 };
 
