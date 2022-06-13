@@ -32,9 +32,10 @@ const TrainComponent = () => {
             
             lg:text-left lg:text-lg lg:flex lg:items-center'
           >
-            We offer a broad variety of trainings such as SAP SuccessFactors,
-            Project Management, Web Development. Professional remote or on-site
-            execution of trainings.
+            We offer a broad variety of trainings for e.g. SAP
+            {String.fromCodePoint(0x000ae)} SuccessFactors, Project Management,
+            Web Development. Execution of professional trainings can be remote
+            or on-site.
             <div
               className='mt-8 mx-auto 
                lg:mt-10 lg:hidden '

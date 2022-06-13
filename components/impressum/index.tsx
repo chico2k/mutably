@@ -32,6 +32,8 @@ const ImpressumComponent = () => {
         <br />
         <br />
         Handelsregister: HRB 30689 <br />
+        USt-IdNr.: DE350674764
+        <br />
         Registergericht: Amtsgericht Traunstein
         <br />
         <br />
