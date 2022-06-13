@@ -14,12 +14,22 @@ export const EMPLOYEE_DATA: IDetailData = {
     languages: ['German', 'English'],
     role: 'CEO',
     certificates: [
-      'SAP SuccessFactors Learning - Professional',
-      'SAP SuccessFactors Employee Central - Associate',
-      'SAP SuccessFactors Workforce Analytics  Functional Consultant - Associate',
-      'SAP SuccessFactors Functional Reporting - Associate',
+      `SAP${String.fromCodePoint(
+        0x000ae
+      )} SuccessFactors Learning - Professional`,
+      `SAP${String.fromCodePoint(
+        0x000ae
+      )} SuccessFactors Employee Central - Associate`,
+      `SAP${String.fromCodePoint(
+        0x000ae
+      )} SuccessFactors Workforce Analytics  Functional Consultant - Associate`,
+      `SAP${String.fromCodePoint(
+        0x000ae
+      )} SuccessFactors Functional Reporting - Associate`,
     ],
-    bio: 'Mario has more than 9 years of experience in HR digitalization projects as well as implementing SAP SuccessFactors for a variety of clients & industries. He has a diploma in Business Administration with focus on Human Resources.',
+    bio: `Mario has more than 9 years of experience in HR digitalization projects as well as implementing SAP${String.fromCodePoint(
+      0x000ae
+    )} SuccessFactors for a variety of clients & industries. He has a diploma in Business Administration with focus on Human Resources.`,
     previousWorkExperience: [
       {
         id: 1,
@@ -47,7 +57,7 @@ export const EMPLOYEE_DATA: IDetailData = {
       },
     ],
     focusAreas: [
-      'SAP SuccessFactors',
+      `SAP${String.fromCodePoint(0x000ae)} SuccessFactors`,
       'Project Management',
       'Workshop Moderation',
       'Learning Mgmt.',

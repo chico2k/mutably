@@ -9,9 +9,10 @@ const features = [
       'Steering of global as well as national transformation projects.',
   },
   {
-    name: 'SAP SuccessFactors',
-    description:
-      'Digitizing of HR processes in a modern and state of the art cloud solution.',
+    name: 'Cloud Implementation',
+    description: `Digitizing of HR processes in a modern and state of the art cloud solution e.g. SAP${String.fromCodePoint(
+      0x000ae
+    )} SuccessFactors.`,
   },
   {
     name: 'Validated Learning',

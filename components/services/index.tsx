@@ -13,8 +13,10 @@ const features = [
     icon: UserGroupIcon,
     bullets: [
       'Holistic HR Transformation',
-      'Implementation Planning',
-      'SAP SuccessFactors',
+      'Roadmap and Project Planning',
+      `Implementation Support for SAP ${String.fromCodePoint(
+        0x000ae
+      )} SuccessFactors`,
       'Validated LMS',
       'Reporting & Analytics',
       'Technical Infrastructure',
@@ -26,21 +28,23 @@ const features = [
       'Infrastructure & Integration design as well as efficient and fast development with state of the art tools like React, Next.JS and Serverless.',
     icon: CloudIcon,
     bullets: [
-      'Integration',
-      'React',
-      'Next.js',
+      'Technical Integration',
+      'React & Next.js',
       'Serverless',
       'Database & Storage',
       'Infrastructure as a Service',
+      'Data Migration Support',
     ],
   },
   {
     name: 'Train',
     description:
-      'Broad variety of trainings such as SAP SuccessFactors, Project Management, Web Development. Professional remote or on-site execution of trainings.',
+      'Broad variety of trainings for Applications, Project Management, Web Development. Professional remote or on-site execution of trainings.',
     icon: SpeakerphoneIcon,
     bullets: [
-      'SAP SuccessFactors',
+      `HR Cloud Software e.g SAP${String.fromCodePoint(
+        0x000ae
+      )} SuccessFactors`,
       'Project Management',
       'Reporting & Analytics',
       'Development',
