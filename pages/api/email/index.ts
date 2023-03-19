@@ -17,9 +17,7 @@ async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
         ...formValues,
       },
     });
-    console.log("email sent", t);
   } catch (error) {
-    console.log("error", error.response.body);
     return res.status(500).json({ error: "Mail Delivery failed" });
   }
 
