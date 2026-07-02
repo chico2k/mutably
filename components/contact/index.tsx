@@ -17,11 +17,11 @@ const ContactComponent: React.FC<IProps> = ({ header }) => {
   });
 
   return (
-    <section className='pt-16 lg:pb-8 bg-gray-900 items-end max-w-lg mx-auto px-4 sm:px-6 sm:max-w-xl lg:max-w-7xl lg:px-8 xl:max-w-7xl  '>
-      <div className='lg:pb-8 mx-auto bg-gray-900 items-end max-w-lg lg:max-w-7xl'>
+    <section className='bg-gray-900 max-w-2xl mx-auto px-6'>
+      <div className='bg-gray-900'>
         {header && (
-          <h2 className='md:pt-6 lg:pt-12 lg:text-center text-left mx-auto  text-4xl text-gray-100 sm:text-5xl lg:text-7xl '>
-            Get in touch with us.
+          <h2 className='text-2xl font-semibold text-gray-100 sm:text-3xl'>
+            Contact
           </h2>
         )}
 
@@ -43,8 +43,8 @@ const ContactComponent: React.FC<IProps> = ({ header }) => {
         ) : null}
       </div>
 
-      <div className='bg-gray-900 py-10  lg:col-span-3 lg:py-12'>
-        <div className='max-w-lg mx-auto lg:max-w-xl'>
+      <div className='bg-gray-900 py-8'>
+        <div>
           <ContactForm
             setSuccess={setSuccess}
             success={success}

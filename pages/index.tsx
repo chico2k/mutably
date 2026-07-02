@@ -6,10 +6,10 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>mutably | Consulting. Training. Development</title>
+        <title>mutably GmbH | About and Contact</title>
         <meta
           name='description'
-          content='mutably | Consulting. Training. Development.'
+          content='Company and contact information for mutably GmbH.'
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
