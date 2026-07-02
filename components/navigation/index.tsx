@@ -5,20 +5,13 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import NextLink from 'next/link';
 import ContactButton from '../ui/ContactButton';
 import NextImage from 'next/image';
-import { useRouter } from 'next/router';
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'Advise', href: '/advise' },
-  { name: 'Develop', href: '/develop' },
-  { name: 'Train', href: '/train' },
-  { name: 'Team', href: '/team' },
-  { name: 'References', href: '/references' },
+  { name: 'About', href: '/#about' },
+  { name: 'Contact', href: '/#contact' },
 ];
 
 const Navigation = () => {
-  const router = useRouter();
-
   return (
     <Popover as='header' className='absolute w-full z-40' id='navigation'>
       <div
@@ -54,18 +47,13 @@ const Navigation = () => {
               </div>
             </div>
             <div className='hidden space-x-7 md:flex md:ml-20 lg:space-x-10'>
-              {navigation.map((item) => {
-                const active =
-                  router.pathname === item.href
-                    ? `text-base font-semibold text-indigo-400  border-b-2 border-indigo-400 `
-                    : `text-base font-medium text-white hover:text-gray-300 `;
-
-                return (
-                  <NextLink href={item.href} key={item.name}>
-                    <a className={active}>{item.name}</a>
-                  </NextLink>
-                );
-              })}
+              {navigation.map((item) => (
+                <NextLink href={item.href} key={item.name}>
+                  <a className='text-base font-medium text-white hover:text-gray-300'>
+                    {item.name}
+                  </a>
+                </NextLink>
+              ))}
             </div>
           </div>
           <div className='hidden lg:flex md:items-center md:space-x-6'>
@@ -107,23 +95,20 @@ const Navigation = () => {
             </div>
             <div className='pt-5 pb-6'>
               <div className='px-2 space-y-1'>
-                {navigation.map((item) => {
-                  const active =
-                    router.pathname === item.href
-                      ? `block px-3 py-2 rounded-md text-base font-bold text-indigo-600`
-                      : `block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50`;
-
-                  return (
-                    <a key={item.name} href={item.href} className={active}>
-                      {item.name}
-                    </a>
-                  );
-                })}
+                {navigation.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className='block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50'
+                  >
+                    {item.name}
+                  </a>
+                ))}
               </div>
               <div className='mt-6 px-5'>
-                <NextLink href='/contact'>
+                <NextLink href='/#contact'>
                   <a className='block text-center w-full py-3 px-4 rounded-md shadow bg-indigo-600 text-white font-medium hover:bg-indigo-700'>
-                    Contact us
+                    Contact
                   </a>
                 </NextLink>
               </div>

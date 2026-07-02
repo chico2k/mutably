@@ -1,8 +1,6 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import Navigation from '../components/navigation';
-import FooterComponent from '../components/footer';
-import { useEffect, useReducer, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Router } from 'next/router';
 import Spinner from '../components/Layout/Spinner';
 import 'react-toastify/dist/ReactToastify.css';
@@ -25,13 +23,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <div className='bg-gray-900'>
-        <Navigation />
         <>
           {isLoading && <Spinner />}
           <Component {...pageProps} />
 
           <ToastContainer />
-          <FooterComponent />
         </>
       </div>
     </>
